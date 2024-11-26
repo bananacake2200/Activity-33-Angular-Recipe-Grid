@@ -1,0 +1,15 @@
+<div class="border">
+    <div class="border__content">
+      <div *ngFor="let rec of recipies" class="border__content-card">
+        <img [src]="rec.image" class="card__image" />
+        <div class="card__content">
+          <h3 class="card__title">{{ rec.name }}</h3>
+        </div>
+        <div class="card__btn">
+          <button class="btn primary-btn">Ingredients</button> 
+          <button class="btn secondary-btn">Trending!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
